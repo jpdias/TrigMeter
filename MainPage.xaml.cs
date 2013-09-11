@@ -9,6 +9,8 @@ using System.Windows.Controls.Primitives;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TrigMeter.Resources;
+using System.Windows.Shapes;
+using System.Windows.Media;
 
 
 namespace TrigMeter
@@ -51,14 +53,19 @@ namespace TrigMeter
                 b = (float)Math.Sqrt(c * c - a * a);
                 B.Text =b.ToString();
             }
+            else if ((B.Text.Trim().Length == 0 && A.Text.Trim().Length == 0) || (B.Text.Trim().Length == 0 && C.Text.Trim().Length == 0) || (C.Text.Trim().Length == 0 && A.Text.Trim().Length == 0))
+            {
+                MessageBox.Show("Not enough data!", "", MessageBoxButton.OK);
+            }
             else
             {
-                MessageBox.Show("One box must be empty!","", MessageBoxButton.OK);
+                MessageBox.Show("One box must be empty!", "", MessageBoxButton.OK);
                 clear();
 
             }
             C1.Text =RTD(Math.Acos( ((float)(b * b + c * c - a * a) / (float)(2 * b * c)))).ToString() ;
             C2.Text = RTD(Math.Acos( ((float)(-b * b + c * c + a * a) / (float)(2 * a * c)))).ToString() ;
+            drw();
         }
 
         private double DTR(double angle)
@@ -73,6 +80,24 @@ namespace TrigMeter
             C.Text = "";
             C1.Text = "";
             C2.Text = "";
+        }
+
+        private void drw()
+        {
+            
+
+            Line line = new Line();
+            line.Stroke = new SolidColorBrush(Colors.White);
+            line.StrokeThickness = 3;
+
+            line.X1 = Canvas.GetLeft(Draw) ;
+            line.X2 = Canvas.GetLeft(Draw) + Draw.Height;
+
+            line.Y1 = Canvas.GetTop(Draw);
+            line.Y2 = Canvas.GetTop(Draw) + Draw.Height;
+
+            Draw.Children.Add(line);
+          //  LayoutRoot.Children.Add(line);
         }
         private double RTD(double angle)
         {
