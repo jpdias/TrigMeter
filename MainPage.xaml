@@ -43,8 +43,8 @@
                         <Button Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="198" Height="72" Click="Button_Click_1" Canvas.Left="2" Canvas.Top="282"/>
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="β : " VerticalAlignment="Top" Height="67" Width="61" FontSize="30" Canvas.Left="200" Canvas.Top="227"/>
                         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="α :" VerticalAlignment="Top" Height="67" Width="61" FontSize="30" Canvas.Left="17" Canvas.Top="227"/>
-                        <TextBlock x:Name="C1" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="148" FontSize="30" Foreground="White" Canvas.Left="52" Canvas.Top="234"/>
-                        <TextBlock x:Name="C2" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="150" FontSize="30" Foreground="White" RenderTransformOrigin="-0.15,0.458" Canvas.Left="247" Canvas.Top="227"/>
+                        <TextBlock x:Name="C1" TextWrapping="Wrap" Height="47" Width="148" FontSize="30" Foreground="White" Canvas.Left="52" Canvas.Top="227"/>
+                        <TextBlock x:Name="C2" TextWrapping="Wrap" Height="47" Width="150" FontSize="30" RenderTransformOrigin="-0.15,0.458" Canvas.Left="247" Canvas.Top="227" Foreground="White"/>
                     </Canvas>
                 </phone:PanoramaItem>
                 <phone:PanoramaItem CacheMode="{x:Null}" Header="Draw" Width="451" FontSize="8">
