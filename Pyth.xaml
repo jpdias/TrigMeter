@@ -1,0 +1,95 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TrigMeter.Pyth"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,144,12,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <phone:Panorama HorizontalAlignment="Left" Height="737" Margin="-5,-123,0,0" Title="TrigMeter"
+                            VerticalAlignment="Top" Width="451" Loaded="Panorama_Loaded" Grid.ColumnSpan="2">
+                <phone:PanoramaItem CacheMode="{x:Null}" Header="Pythagorean" Width="451">
+                    <phone:PanoramaItem.RenderTransform>
+                        <TranslateTransform />
+                    </phone:PanoramaItem.RenderTransform>
+                    <Canvas Height="420" VerticalAlignment="Top" Margin="0,0,42,0">
+                        <TextBox x:Name="C" InputScope="Number" HorizontalAlignment="Left" Height="76"
+                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="200"
+                                 Canvas.Top="132" />
+                        <TextBox x:Name="B" InputScope="Number" HorizontalAlignment="Left" Height="76"
+                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="200"
+                                 Canvas.Top="70" />
+                        <TextBox x:Name="A" InputScope="Number" HorizontalAlignment="Left" Height="82"
+                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207"
+                                 RenderTransformOrigin="0.473,0.435" Canvas.Left="200" Canvas.Top="2" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cathethus A : "
+                                   VerticalAlignment="Top" Height="67" Width="183" FontSize="30" Canvas.Left="17"
+                                   Canvas.Top="22" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cathethus B : "
+                                   VerticalAlignment="Top" Height="68" Width="183" FontSize="30" Canvas.Left="17"
+                                   Canvas.Top="89" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hypotenuse : "
+                                   VerticalAlignment="Top" Height="68" Width="183" FontSize="30" Canvas.Left="17"
+                                   Canvas.Top="151" />
+                        <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75"
+                                Width="192" Click="Button_Click" Canvas.Left="205" Canvas.Top="279" />
+                        <Button Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="198"
+                                Height="72" Click="Button_Click_1" Canvas.Left="2" Canvas.Top="282" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="β : " VerticalAlignment="Top"
+                                   Height="67" Width="61" FontSize="30" Canvas.Left="200" Canvas.Top="227" />
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="α :" VerticalAlignment="Top"
+                                   Height="67" Width="61" FontSize="30" Canvas.Left="17" Canvas.Top="227" />
+                        <TextBlock x:Name="C1" TextWrapping="Wrap" Height="47" Width="148" FontSize="30"
+                                   Foreground="White" Canvas.Left="52" Canvas.Top="227" />
+                        <TextBlock x:Name="C2" TextWrapping="Wrap" Height="47" Width="150" FontSize="30"
+                                   RenderTransformOrigin="-0.15,0.458" Canvas.Left="247" Canvas.Top="227"
+                                   Foreground="White" />
+                    </Canvas>
+                </phone:PanoramaItem>
+                <phone:PanoramaItem CacheMode="{x:Null}" Header="Draw" Width="391" FontSize="8">
+                    <phone:PanoramaItem.RenderTransform>
+                        <TranslateTransform />
+                    </phone:PanoramaItem.RenderTransform>
+                    <Grid Height="356" Width="325">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="175*" />
+                        </Grid.RowDefinitions>
+                        <Canvas x:Name="Draw" HorizontalAlignment="Left" Width="325" Margin="30,-10,-30,0"
+                                Grid.RowSpan="2" Height="356" VerticalAlignment="Top" />
+                        <TextBlock HorizontalAlignment="Left" Margin="0,-43,0,0" TextWrapping="Wrap" Text="β"
+                                   VerticalAlignment="Top" Height="39" Width="49" FontSize="30" />
+                        <TextBlock HorizontalAlignment="Left" Margin="324,311,-48,0" TextWrapping="Wrap" Text="α"
+                                   VerticalAlignment="Top" Height="39" Width="49" FontSize="30" Grid.Row="1" />
+
+                    </Grid>
+
+                </phone:PanoramaItem>
+            </phone:Panorama>
+
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
