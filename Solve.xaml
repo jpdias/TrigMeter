@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="TrigMeter.PivotPage1"
+    x:Class="TrigMeter.Solve"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -18,12 +18,12 @@
         <!--Pivot Control-->
         <phone:Pivot Title="TrigMeter">
             <!--Pivot item one-->
-            <phone:PivotItem Header="Pythagorian">
+            <phone:PivotItem Header="Resolvent formula">
                 <Grid/>
             </phone:PivotItem>
 
             <!--Pivot item two-->
-            <phone:PivotItem Header="Draw">
+            <phone:PivotItem Header="item2">
                 <Grid/>
             </phone:PivotItem>
         </phone:Pivot>

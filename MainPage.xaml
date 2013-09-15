@@ -32,7 +32,7 @@
                         VerticalAlignment="Top" Width="456" Height="97" Click="Button_Click_1" />
                 <Button Content="Areas" HorizontalAlignment="Left" Margin="0,107,0,0" VerticalAlignment="Top"
                         Width="456" Height="97" Click="Button_Click" />
-                <Button Content="Volumes" HorizontalAlignment="Left" Margin="0,204,0,0" VerticalAlignment="Top"
+                <Button Content="Resolvent Formula" HorizontalAlignment="Left" Margin="0,204,0,0" VerticalAlignment="Top"
                         Width="456" Height="97" Click="Button_Click_2" />
 
             </Grid>

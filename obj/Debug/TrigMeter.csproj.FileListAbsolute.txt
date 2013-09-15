@@ -20,3 +20,7 @@ C:\Users\JP Dias\documents\visual studio 2012\Projects\TrigMeter\TrigMeter\obj\D
 C:\Users\JP Dias\documents\visual studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\XapCacheFile.xml
 C:\Users\JP Dias\documents\visual studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\MainPage.g.cs
 C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\App.g.cs
+C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\TrigMeter.csprojResolveAssemblyReference.cache
+C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\Areas.g.cs
+C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\Solve.g.cs

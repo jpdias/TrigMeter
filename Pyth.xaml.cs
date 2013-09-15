@@ -31,7 +31,7 @@ namespace TrigMeter
                 alfa = a;
                 beta = b;
                 //c = float.Parse(C.Text);
-                c = (float) Math.Sqrt(a*a + b*b);
+                c = (float)Math.Sqrt(a * a + b * b);
                 C.Text = c.ToString();
                 angles(a, b, c);
             }
@@ -50,7 +50,7 @@ namespace TrigMeter
 
 
                 //c = float.Parse(C.Text);
-                a = (float) Math.Sqrt(c*c - b*b);
+                a = (float)Math.Sqrt(c * c - b * b);
                 A.Text = a.ToString();
                 angles(a, b, c);
             }
@@ -68,7 +68,7 @@ namespace TrigMeter
                     return;
                 }
                 //c = float.Parse(C.Text);
-                b = (float) Math.Sqrt(c*c - a*a);
+                b = (float)Math.Sqrt(c * c - a * a);
                 B.Text = b.ToString();
                 angles(a, b, c);
             }
@@ -92,17 +92,17 @@ namespace TrigMeter
 
         private double DTR(double angle)
         {
-            return (Math.PI*angle)/180.0;
+            return (Math.PI * angle) / 180.0;
         }
 
         private void angles(float a, float b, float c)
         {
             String c1, c2;
-            c1 = RTD(Math.Acos(((b*b + c*c - a*a)/(2*b*c)))).ToString();
-            c2 = RTD(Math.Acos(((-b*b + c*c + a*a)/(2*a*c)))).ToString();
+            c1 = RTD(Math.Acos(((b * b + c * c - a * a) / (2 * b * c)))).ToString();
+            c2 = RTD(Math.Acos(((-b * b + c * c + a * a) / (2 * a * c)))).ToString();
             C1.Text = c1.Substring(0, 8);
             C2.Text = c2.Substring(0, 8);
-            points(Math.Acos(((b*b + c*c - a*a)/(2*b*c))), Math.Acos(((-b*b + c*c + a*a)/(2*a*c))));
+            points(Math.Acos(((b * b + c * c - a * a) / (2 * b * c))), Math.Acos(((-b * b + c * c + a * a) / (2 * a * c))));
         }
 
         private void clear()
@@ -123,19 +123,19 @@ namespace TrigMeter
             pnt[0].X = 0;
             pnt[0].Y = 356;
 
-            if ((pnt[0].Y - Math.Sin(Math.PI/2)*alfa) < 50 || (pnt[1].X + Math.Cos(Math.PI/4)*beta*fact) < 50)
+            if ((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 50 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 50)
                 fact = 2;
-            else if (((pnt[0].Y - Math.Sin(Math.PI/2)*alfa) > 320 || (pnt[1].X + Math.Cos(Math.PI/4)*beta*fact) > 320)
-                     && (pnt[0].Y - Math.Sin(Math.PI/2)*alfa) < 640 || (pnt[1].X + Math.Cos(Math.PI/4)*beta*fact) < 640)
-                fact = 1/2;
+            else if (((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) > 320 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) > 320)
+                     && (pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 640 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 640)
+                fact = 1 / 2;
             else
-                fact = 1/5;
+                fact = 1 / 5;
 
 
             pnt[1].X = 0; // (int)(pnt[0].X - Math.Cos(Math.PI / 2) * alfa * 2);
-            pnt[1].Y = (int) (pnt[0].Y - Math.Sin(Math.PI/2)*alfa*fact);
+            pnt[1].Y = (int)(pnt[0].Y - Math.Sin(Math.PI / 2) * alfa * fact);
 
-            pnt[2].X = (int) (pnt[1].X + Math.Cos(Math.PI/4)*beta*fact);
+            pnt[2].X = (int)(pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact);
             pnt[2].Y = 356; // (int)(pnt[1].Y + Math.Sin(Math.PI / 4) * beta * 2);
 
             pontos = pnt;
@@ -180,7 +180,7 @@ namespace TrigMeter
 
         private double RTD(double angle)
         {
-            return angle*(180.0/Math.PI);
+            return angle * (180.0 / Math.PI);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -189,18 +189,6 @@ namespace TrigMeter
         }
 
 
-        private void Panorama_Loaded(object sender, RoutedEventArgs e)
-        {
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            if (e.NavigationMode == NavigationMode.Back) return;
 
-            string shouldDownload = ""; //May not be needed if you'll only ever go to page 2 from page 1 to download...
-            if (NavigationContext.QueryString.TryGetValue("shouldDownload", out shouldDownload))
-            {
-                Convert.ToBoolean(shouldDownload);
-            }
-        }
     }
 }

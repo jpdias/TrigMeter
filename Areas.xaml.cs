@@ -10,9 +10,9 @@ using Microsoft.Phone.Shell;
 
 namespace TrigMeter
 {
-    public partial class PivotPage1 : PhoneApplicationPage
+    public partial class Areas : PhoneApplicationPage
     {
-        public PivotPage1()
+        public Areas()
         {
             InitializeComponent();
         }

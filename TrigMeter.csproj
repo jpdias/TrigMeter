@@ -97,8 +97,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PivotPage1.xaml.cs">
-      <DependentUpon>PivotPage1.xaml</DependentUpon>
+    <Compile Include="Areas.xaml.cs">
+      <DependentUpon>Areas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Solve.xaml.cs">
+      <DependentUpon>Solve.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pyth.xaml.cs">
       <DependentUpon>Pyth.xaml</DependentUpon>
@@ -119,7 +122,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PivotPage1.xaml">
+    <Page Include="Areas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Solve.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
