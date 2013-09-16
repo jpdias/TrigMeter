@@ -18,15 +18,31 @@
         <!--Pivot Control-->
         <phone:Pivot Title="TrigMeter">
             <!--Pivot item one-->
-            <phone:PivotItem Header="Resolvent formula">
-                <Grid/>
+            <phone:PivotItem Header="Quadratic">
+
+
+                <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
+                    <TextBlock HorizontalAlignment="Left" Margin="33,105,0,0" TextWrapping="Wrap" Text="A : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,181,0,0" TextWrapping="Wrap" Text="B : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,261,0,0" TextWrapping="Wrap" Text="C : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBox x:Name="A" HorizontalAlignment="Left" Height="76" Margin="73,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383" InputScope="Number"/>
+                    <TextBox x:Name="B" HorizontalAlignment="Left" Height="72" Margin="73,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383"  InputScope="Number"/>
+                    <TextBox x:Name="C" HorizontalAlignment="Left" Height="72" Margin="73,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="383"  InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,339,0,0" TextWrapping="Wrap" Text="X1 : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="59,10,0,0" TextWrapping="Wrap" Text="Ax^2 + Bx + C = 0 " VerticalAlignment="Top" Height="72" Width="338" FontSize="40"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,409,0,0" TextWrapping="Wrap" Text="X2 : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock x:Name="R1" HorizontalAlignment="Left" Margin="90,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="366" FontSize="30"/>
+                    <TextBlock x:Name="R2" HorizontalAlignment="Left" Margin="90,409,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="366" FontSize="30"/>
+                    <Button x:Name="Clr" Content="Clear" HorizontalAlignment="Left" Margin="10,493,0,0" VerticalAlignment="Top" Width="216" Click="Clr_Click"/>
+                    <Button x:Name="calc" Content="Calculate" HorizontalAlignment="Left" Margin="226,493,0,0" VerticalAlignment="Top" Width="220" Height="72" Click="calc_Click"/>
+                </Grid>
             </phone:PivotItem>
 
-            <!--Pivot item two-->
+            <!--
             <phone:PivotItem Header="item2">
                 <Grid/>
-            </phone:PivotItem>
+            </phone:PivotItem> -->
         </phone:Pivot>
     </Grid>
-    
+
 </phone:PhoneApplicationPage>
