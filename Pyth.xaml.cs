@@ -24,7 +24,8 @@ namespace TrigMeter
         {
             float a = 0, b = 0, c = 0;
 
-            if ((A != null && B != null) || (A != null && C != null) || (B != null && C != null))
+            if ((A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0) || (A.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
+                || (B.Text.Trim().Length != 0 && C.Text.Trim().Length != 0))
             {
                 if (C.Text.Trim().Length == 0)
                 {

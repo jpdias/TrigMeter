@@ -12,7 +12,7 @@ namespace TrigMeter
 
         private void calc_Click(object sender, RoutedEventArgs e)
         {
-            if(A!=null && B!=null && C != null)
+            if (A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
                  SolveQuadratic(double.Parse(A.Text), double.Parse(B.Text), double.Parse(C.Text));
             else
             {

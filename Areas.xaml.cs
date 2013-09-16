@@ -20,7 +20,7 @@ namespace TrigMeter
 
         private void Calc1_Click(object sender, RoutedEventArgs e)
         {
-            if ((B1 != null) && (B2 != null))
+            if ((B1.Text.Trim().Length != 0) && (B2.Text.Trim().Length != 0))
                 R1.Text = ((float.Parse(B1.Text)*float.Parse(B2.Text))/2).ToString(CultureInfo.InvariantCulture);
             else
             {
@@ -45,7 +45,7 @@ namespace TrigMeter
 
         private void Calc2(object sender, RoutedEventArgs e)
         {
-            if ((C1 != null) && (C2 != null))
+            if ((C1.Text.Trim().Length != 0) && (C2.Text.Trim().Length != 0))
                 R2.Text = (float.Parse(C1.Text)*float.Parse(C2.Text)).ToString();
             else
             {
@@ -63,7 +63,7 @@ namespace TrigMeter
 
         private void Calc3(object sender, RoutedEventArgs e)
         {
-            if ((D1 != null) && (D2 != null))
+            if ((D1.Text.Trim().Length != 0) && (D2.Text.Trim().Length != 0))
                 R3.Text = (float.Parse(C1.Text) * float.Parse(C2.Text)).ToString();
             else
             {
@@ -75,7 +75,7 @@ namespace TrigMeter
 
         private void Calc4(object sender, RoutedEventArgs e)
         {
-            if ((E1 != null) && (E2 != null) && (E3 != null))
+            if ((E1.Text.Trim().Length != 0) && (E2.Text.Trim().Length != 0) && (E3.Text.Trim().Length != 0))
             {
                 R4.Text = (((float.Parse(E1.Text)*float.Parse(E2.Text))/2.0)*float.Parse(E3.Text)).ToString();
                
@@ -105,7 +105,7 @@ namespace TrigMeter
 
         private void Calc5(object sender, RoutedEventArgs e)
         {
-            if (F1 != null)
+            if (F1.Text.Trim().Length!=0)
             {
                 if (Rad.IsChecked == true)
                     R5.Text =  (Math.PI*float.Parse(F1.Text)*float.Parse(F1.Text)).ToString();
