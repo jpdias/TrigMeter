@@ -124,12 +124,12 @@ namespace TrigMeter
             pnt[0].Y = 356;
 
             if ((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 50 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 50)
-                fact = 2;
+                fact = 4;
             else if (((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) > 320 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) > 320)
                      && (pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 640 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 640)
                 fact = 1 / 2;
             else
-                fact = 1 / 5;
+                fact = 1 / 4;
 
 
             pnt[1].X = 0; // (int)(pnt[0].X - Math.Cos(Math.PI / 2) * alfa * 2);

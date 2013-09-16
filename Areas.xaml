@@ -19,17 +19,41 @@
         <phone:Pivot Title="TrigMeter">
             <!--Pivot item one-->
             <phone:PivotItem Header="Triangle">
-                <Grid/>
+                <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,174,0,0" TextWrapping="Wrap" Text="Hight :" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,122,0,0" TextWrapping="Wrap" Text="Base length :" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBox x:Name="B1" HorizontalAlignment="Left" Height="66" Margin="184,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" InputScope="Number"/>
+                    <TextBox x:Name="B2" HorizontalAlignment="Left" Height="69" Margin="136,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock x:Name="R1" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform SkewX="-2.035" TranslateX="0.711"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Button x:Name="Calc1" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc1_Click"/>
+                    <Button x:Name="Clr1" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr1_Click"/>
+                </Grid>
             </phone:PivotItem>
 
             <!--Pivot item two-->
             <phone:PivotItem Header="Square">
-                <Grid/>
+
+                <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Side A :" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBox x:Name="C1" HorizontalAlignment="Left" Height="66" Margin="109,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Side B : " VerticalAlignment="Top" FontSize="30"/>
+                    <TextBox x:Name="C2" HorizontalAlignment="Left" Height="66" Margin="109,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
+                    <Button x:Name="Calc2A" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc2"/>
+                    <Button x:Name="Clr2A" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock x:Name="R2" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
+                </Grid>
             </phone:PivotItem>
             <phone:PivotItem Header="Polygon">
+                
                 <Grid/>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>
-    
+
 </phone:PhoneApplicationPage>
