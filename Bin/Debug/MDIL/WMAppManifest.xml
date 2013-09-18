@@ -2,7 +2,7 @@
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
   <App xmlns="" ProductID="{2ea22770-93d6-449e-abb0-7f637eb7fd58}" Title="TrigMeter" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="TrigMeter author" Description="Trignometric, Areas and Volumes, and Math in general" Publisher="TrigMeter" PublisherID="{f73f3c4a-46b1-4610-8ed7-a4ae028f9c72}">
-    <IconPath IsRelative="true" IsResource="false">TrigMeter1.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">TrigMeter.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
@@ -31,8 +31,6 @@
     </Tokens>
     <ScreenResolutions>
       <ScreenResolution Name="ID_RESOLUTION_HD720P" />
-      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
-      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
     </ScreenResolutions>
   </App>
 </Deployment>
