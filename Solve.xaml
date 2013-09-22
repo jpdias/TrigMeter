@@ -15,6 +15,9 @@
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Rectangle 
+    VerticalAlignment="Top" HorizontalAlignment="Stretch" 
+    Height="150" Fill="OrangeRed" />
         <!--Pivot Control-->
         <phone:Pivot Title="TrigMeter">
             <!--Pivot item one-->

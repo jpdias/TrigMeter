@@ -1,17 +1,21 @@
-﻿<xapCache source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\TrigMeter_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/17/2013 1:04:52 AM">
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\TrigMeter.dll" archivePath="TrigMeter.dll" lastWriteTime="9/17/2013 1:04:29 AM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="9/10/2013 1:42:31 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="9/15/2013 3:03:42 AM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\TrigMeter.png" archivePath="TrigMeter.png" lastWriteTime="9/17/2013 12:53:07 AM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\TrigMeter1.png" archivePath="TrigMeter1.png" lastWriteTime="9/17/2013 1:04:18 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 5:57:00 PM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\TrigMeter.png" archivePath="TrigMeter.png" lastWriteTime="9/17/2013 12:53:07 AM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\TrigMeter1.png" archivePath="TrigMeter1.png" lastWriteTime="9/17/2013 1:04:18 AM" />
-  <file source="C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="9/17/2013 1:04:52 AM" />
+﻿<xapCache source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="22/09/2013 14:53:47">
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.dll" archivePath="TrigMeter.dll" lastWriteTime="22/09/2013 14:53:46" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="21/09/2013 16:00:40" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter.png" archivePath="TrigMeter.png" lastWriteTime="21/09/2013 15:57:09" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter1.png" archivePath="TrigMeter1.png" lastWriteTime="21/09/2013 15:57:09" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 17:57:00" />
+  <file source="C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="21/09/2013 15:57:08" />
 </xapCache>

@@ -24,3 +24,30 @@ C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\Bin\D
 C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\TrigMeter.csprojResolveAssemblyReference.cache
 C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\Areas.g.cs
 C:\Users\JP Dias\Documents\Visual Studio 2012\Projects\TrigMeter\TrigMeter\obj\Debug\Solve.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter1.png
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter.dll
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter.pdb
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\AppManifest.xaml
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\TrigMeter_Debug_AnyCPU.xap
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.csprojResolveAssemblyReference.cache
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\App.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\MainPage.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\Areas.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\Solve.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\Pyth.g.cs
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.g.resources
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.Resources.AppResources.resources
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.csproj.GenerateResource.Cache
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.dll
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\TrigMeter.pdb
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\XapCacheFile.xml
+C:\Users\João Pedro Dias\Source\Repos\TrigMeter\obj\Debug\Volume.g.cs

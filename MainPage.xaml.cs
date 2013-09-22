@@ -25,5 +25,10 @@ namespace TrigMeter
         {
             NavigationService.Navigate(new Uri("/Solve.xaml", UriKind.Relative));
         }
+
+        private void Volum_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Volume.xaml", UriKind.Relative));
+        }
     }
 }
