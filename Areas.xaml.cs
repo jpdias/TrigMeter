@@ -124,5 +124,62 @@ namespace TrigMeter
                 return;
             }
         }
+
+        private void Calc7(object sender, RoutedEventArgs e)
+        {
+            if (F7.Text.Trim().Length != 0 && F17.Text.Trim().Length != 0)
+            {
+                if (Rad1.IsChecked == true)
+                {
+                    R7.Text = (Math.PI * float.Parse(F7.Text) * float.Parse(F17.Text)).ToString();
+                    
+                }
+                    
+                else if (Dia1.IsChecked == true)
+                    R7.Text = (Math.PI * float.Parse(F7.Text) / 2 * float.Parse(F17.Text) / 2).ToString();
+
+                else
+                {
+                    MessageBox.Show("No data!", "", MessageBoxButton.OK);
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("No data!", "", MessageBoxButton.OK);
+                return;
+            }
+        }
+
+        private void Clr7(object sender, RoutedEventArgs e)
+        {
+            F17.Text = "";
+            F7.Text = "";
+            R7.Text = "";
+        }
+
+        private void Calc8(object sender, RoutedEventArgs e)
+        {
+            if (F8.Text.Trim().Length != 0 && F18.Text.Trim().Length != 0)
+            {
+                var tan = new double();
+                tan = Math.Tan(Math.PI/double.Parse(F8.Text));
+                R8.Text = (double.Parse(F8.Text) * float.Parse(F18.Text) * float.Parse(F18.Text) /
+                      (tan*4)).ToString();
+            }
+            else
+            {
+                MessageBox.Show("No data!", "", MessageBoxButton.OK);
+                
+            }
+           
+        }
+
+        private void Clr8(object sender, RoutedEventArgs e)
+        {
+            R8.Text = "";
+            F8.Text = "";
+            F18.Text = "";
+        }
     }
 }

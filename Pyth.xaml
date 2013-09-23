@@ -57,23 +57,24 @@
                 </Canvas>
             </phone:PivotItem>
 
-            <!--Pivot item two-->
+            <!--
             <phone:PivotItem Header="Draw">
-                <Grid Height="356" Width="325">
+                <Grid Height="356" Margin="66,124,67,123">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="3*" />
                         <RowDefinition Height="175*" />
                     </Grid.RowDefinitions>
-                    <Canvas x:Name="Draw" HorizontalAlignment="Left" Width="325" Margin="30,-10,-30,0"
-                                Grid.RowSpan="2" Height="356" VerticalAlignment="Top" />
+                    <Canvas x:Name="Draw" HorizontalAlignment="Left" Width="350" Margin="0,-4,-32,0"
+                                Grid.RowSpan="2" Height="350" VerticalAlignment="Top" />
                     <TextBlock HorizontalAlignment="Left" Margin="0,-43,0,0" TextWrapping="Wrap" Text="β"
                                    VerticalAlignment="Top" Height="39" Width="49" FontSize="30" />
-                    <TextBlock HorizontalAlignment="Left" Margin="324,311,-48,0" TextWrapping="Wrap" Text="α"
-                                   VerticalAlignment="Top" Height="39" Width="49" FontSize="30" Grid.Row="1" />
+                    <TextBlock HorizontalAlignment="Left" Margin="355,308,-68,0" TextWrapping="Wrap" Text="α"
+                                   VerticalAlignment="Top" Height="39" Width="36" FontSize="30" Grid.Row="1" />
 
                 </Grid>
 
             </phone:PivotItem>
+            Pivot item two-->
         </phone:Pivot>
     </Grid>
 

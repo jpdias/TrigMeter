@@ -103,7 +103,7 @@ namespace TrigMeter
             c2 = RTD(Math.Acos(((-b * b + c * c + a * a) / (2 * a * c)))).ToString();
             C1.Text = c1.Substring(0, 8);
             C2.Text = c2.Substring(0, 8);
-            calc();
+            //calc();
         }
 
         private void clear()
@@ -113,40 +113,56 @@ namespace TrigMeter
             C.Text = "";
             C1.Text = "";
             C2.Text = "";
-            Draw.Children.Clear();
+           // Draw.Children.Clear();
         }
 
-        public void calc()
+        /*public void calc()
         {
-            double fact = 1;
+            
             var pnt = new Point[3];
 
+            alfa = alfa/350;
+            beta = beta/350;
             pnt[0].X = 0;
-            pnt[0].Y = 356;
-
-            if ((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 50 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 50)
-                fact = 4;
-            else if (((pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) > 320 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) > 320)
-                     && (pnt[0].Y - Math.Sin(Math.PI / 2) * alfa) < 640 || (pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact) < 640)
-                fact = 1 / 2;
-            else 
+            pnt[0].Y = 350;
+            pnt[1].X = 0;
+            pnt[2].Y = 350;
+            
+            while (alfa < 350 && beta < 350)
             {
-                MessageBox.Show("Too large values to draw!", "", MessageBoxButton.OK);
-                return;
+               
+
+                alfa++;
+                beta++;
+
+
             }
+            pnt[1].Y = (int)(pnt[0].Y - (Math.Sin(Math.PI / 2) * beta));
 
-            pnt[1].X = 0; // (int)(pnt[0].X - Math.Cos(Math.PI / 2) * alfa * 2);
-            pnt[1].Y = (int)(pnt[0].Y - Math.Sin(Math.PI / 2) * alfa * fact);
+            pnt[2].X = (int)(pnt[1].X + (Math.Cos(Math.PI / 4) * alfa));
+            
+         * 
+         * var racio=new double();
+            if (alfa > beta)
+                racio = beta/alfa;
+            else
+                racio = alfa/beta;
+            
 
-            pnt[2].X = (int)(pnt[1].X + Math.Cos(Math.PI / 4) * beta * fact);
-            pnt[2].Y = 356; // (int)(pnt[1].Y + Math.Sin(Math.PI / 4) * beta * 2);
+             // (int)(pnt[0].X - Math.Cos(Math.PI / 2) * alfa * 2);
+            pnt[1].Y = (int) (pnt[0].Y - (Math.Sin(Math.PI/2)*350*racio));
 
+            pnt[2].X = (int)(pnt[1].X + (Math.Cos(Math.PI / 4) * racio * 350));
+             // (int)(pnt[1].Y + Math.Sin(Math.PI / 4) * beta * 2);
+            
+         * 
+         * 
             _pontos = pnt;
-
+            
             drw();
-        }
-
-        private void drw()
+        }*/
+        
+        /*private void drw()
         {
             Draw.Children.Clear();
 
@@ -182,7 +198,7 @@ namespace TrigMeter
             Draw.Children.Add(line2);
             //  LayoutRoot.Children.Add(line);
         }
-
+        */
         private double RTD(double angle)
         {
             return angle * (180.0 / Math.PI);

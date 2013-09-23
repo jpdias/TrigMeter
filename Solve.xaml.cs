@@ -34,8 +34,8 @@ namespace TrigMeter
                 x1 = (-b + System.Math.Sqrt(sqrtpart)) / (2 * a);
 
                 x2 = (-b - System.Math.Sqrt(sqrtpart)) / (2 * a);
-                R1.Text = x1.ToString().Substring(0, 12);
-                R2.Text = x2.ToString().Substring(0, 12);
+                R1.Text = x1.ToString();
+                R2.Text = x2.ToString();
                 // Console.WriteLine("Two Real Solutions: {0,8:f4} or  {1,8:f4}", x1, x2);
 
             }
@@ -49,8 +49,8 @@ namespace TrigMeter
 
                 img = System.Math.Sqrt(sqrtpart) / (2 * a);
 
-                R1.Text = x.ToString().Substring(0, 6) + " + " + img.ToString().Substring(0, 6) + " i";
-                R2.Text = x.ToString().Substring(0, 6) + " + " + img.ToString().Substring(0, 6) + " i";
+                R1.Text = x + " + " + img + " i";
+                R2.Text = x + " - " + img + " i";
                // Console.WriteLine("Two Imaginary Solutions: {0,8:f4} + {1,8:f4} i or {2,8:f4} + {3,8:f4} i", x, img, x, img);
 
             }
@@ -59,7 +59,7 @@ namespace TrigMeter
             {
 
                 x = (-b + System.Math.Sqrt(sqrtpart)) / (2 * a);
-                R1.Text = x.ToString().Substring(0, 12);
+                R1.Text = x.ToString();
                 R2.Text = "Null";
                 //  Console.WriteLine("One Real Solution: {0,8:f4}", x);
 
