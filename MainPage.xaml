@@ -19,11 +19,15 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
+        <Rectangle 
+    VerticalAlignment="Top" HorizontalAlignment="Stretch" 
+    Height="150" Fill="OrangeRed" />
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="TrigMeter" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" />
-        </StackPanel>
+            <Grid  Background="OrangeRed" >
+                <TextBlock Text="TrigMeter" Margin="0,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="100" Foreground="White"/>
+            </Grid>
+            </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
@@ -32,8 +36,10 @@
                         VerticalAlignment="Top" Width="456" Height="97" Click="Button_Click_1" />
                 <Button Content="Areas" HorizontalAlignment="Left" Margin="0,107,0,0" VerticalAlignment="Top"
                         Width="456" Height="97" Click="Button_Click" />
-                <Button Content="Resolvent Formula" HorizontalAlignment="Left" Margin="0,204,0,0" VerticalAlignment="Top"
+                <Button Content="Equations" HorizontalAlignment="Left" Margin="0,301,0,0" VerticalAlignment="Top"
                         Width="456" Height="97" Click="Button_Click_2" />
+                <Button x:Name="Volum" Content="Volumes" HorizontalAlignment="Left" 
+                        Margin="0,204,0,0" VerticalAlignment="Top" Width="456" Height="97" Click="Volum_Click"/>
 
             </Grid>
 
