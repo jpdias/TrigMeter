@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Controls.Primitives;
 
 namespace TrigMeter
 {
@@ -12,23 +8,26 @@ namespace TrigMeter
     {
         // Constructor
 
-        internal double alfa=0.0, beta=0.0;
         private Point[] _pontos = new Point[3];
+        internal double alfa = 0.0, beta = 0.0;
+
+        private double num;
 
         public Pyth()
         {
             InitializeComponent();
         }
 
-        private double num;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             float a = 0, b = 0, c = 0;
 
-            if (((A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0) || (A.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
-                || (B.Text.Trim().Length != 0 && C.Text.Trim().Length != 0))
-                && (double.TryParse(A.Text, out num) && double.TryParse(B.Text,out num)) ||(double.TryParse(B.Text,out num) && double.TryParse(C.Text,out num)
-)|| (double.TryParse(A.Text, out num) && double.TryParse(C.Text, out num))
+            if (((A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0) ||
+                 (A.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
+                 || (B.Text.Trim().Length != 0 && C.Text.Trim().Length != 0))
+                && (double.TryParse(A.Text, out num) && double.TryParse(B.Text, out num)) ||
+                (double.TryParse(B.Text, out num) && double.TryParse(C.Text, out num)
+                    ) || (double.TryParse(A.Text, out num) && double.TryParse(C.Text, out num))
                 )
             {
                 if (C.Text.Trim().Length == 0)
@@ -38,7 +37,7 @@ namespace TrigMeter
                     alfa = a;
                     beta = b;
                     //c = float.Parse(C.Text);
-                    c = (float)Math.Round(Math.Sqrt(a * a + b * b), 5);
+                    c = (float) Math.Round(Math.Sqrt(a*a + b*b), 5);
                     C.Text = c.ToString();
                     angles(a, b, c);
                 }
@@ -51,13 +50,13 @@ namespace TrigMeter
                     if (b > c)
                     {
                         MessageBox.Show("Cathethus can't be larger than hypotenuse!", "", MessageBoxButton.OK);
-                      
+
                         return;
                     }
 
 
                     //c = float.Parse(C.Text);
-                    a = (float)Math.Round(Math.Sqrt(c * c - b * b),5);
+                    a = (float) Math.Round(Math.Sqrt(c*c - b*b), 5);
                     A.Text = a.ToString();
                     angles(a, b, c);
                 }
@@ -71,11 +70,11 @@ namespace TrigMeter
                     if (a > c)
                     {
                         MessageBox.Show("Cathethus can't be larger than hypotenuse!", "", MessageBoxButton.OK);
-                       
+
                         return;
                     }
                     //c = float.Parse(C.Text);
-                    b = (float) Math.Round((Math.Sqrt(c*c - a*a)),5);
+                    b = (float) Math.Round((Math.Sqrt(c*c - a*a)), 5);
                     B.Text = b.ToString();
                     angles(a, b, c);
                 }
@@ -89,22 +88,20 @@ namespace TrigMeter
             else
             {
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
-               
             }
-
         }
 
 
         private double DTR(double angle)
         {
-            return (Math.PI * angle) / 180.0;
+            return (Math.PI*angle)/180.0;
         }
 
         private void angles(float a, float b, float c)
         {
             String c1, c2;
-            c1 = Math.Round(RTD(Math.Acos(((b * b + c * c - a * a) / (2 * b * c)))),5).ToString();
-            c2 =Math.Round( RTD(Math.Acos(((-b * b + c * c + a * a) / (2 * a * c)))),5).ToString();
+            c1 = Math.Round(RTD(Math.Acos(((b*b + c*c - a*a)/(2*b*c)))), 5).ToString();
+            c2 = Math.Round(RTD(Math.Acos(((-b*b + c*c + a*a)/(2*a*c)))), 5).ToString();
             C1.Text = c1;
             C2.Text = c2;
             //calc();
@@ -117,7 +114,7 @@ namespace TrigMeter
             C.Text = "";
             C1.Text = "";
             C2.Text = "";
-           // Draw.Children.Clear();
+            // Draw.Children.Clear();
         }
 
         /*public void calc()
@@ -165,7 +162,7 @@ namespace TrigMeter
             
             drw();
         }*/
-        
+
         /*private void drw()
         {
             Draw.Children.Clear();
@@ -203,17 +200,15 @@ namespace TrigMeter
             //  LayoutRoot.Children.Add(line);
         }
         */
+
         private double RTD(double angle)
         {
-            return angle * (180.0 / Math.PI);
+            return angle*(180.0/Math.PI);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             clear();
         }
-
-
-
     }
 }

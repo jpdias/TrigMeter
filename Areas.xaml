@@ -10,34 +10,44 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
+    SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Rectangle 
-    VerticalAlignment="Top" HorizontalAlignment="Stretch" 
-    Height="150" Fill="OrangeRed" />
+        <Rectangle
+            VerticalAlignment="Top" HorizontalAlignment="Stretch"
+            Height="150" Fill="OrangeRed" />
         <!--Pivot Control-->
         <phone:Pivot Title="TrigMeter">
 
             <!--Pivot item one-->
             <phone:PivotItem Header="Triangle">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="20,213,0,0" TextWrapping="Wrap" Text="Height :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="15,159,0,0" TextWrapping="Wrap" Text="Base length :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="B1" HorizontalAlignment="Left" Height="66" Margin="184,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" InputScope="Number"/>
-                    <TextBox x:Name="B2" HorizontalAlignment="Left" Height="69" Margin="136,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253" InputScope="Number"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="20,295,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R1" HorizontalAlignment="Left" Margin="101.348,296.015,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <TextBlock HorizontalAlignment="Left" Margin="20,213,0,0" TextWrapping="Wrap" Text="Height :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock HorizontalAlignment="Left" Margin="15,159,0,0" TextWrapping="Wrap" Text="Base length :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="B1" HorizontalAlignment="Left" Height="66" Margin="184,145,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="205" InputScope="Number" />
+                    <TextBox x:Name="B2" HorizontalAlignment="Left" Height="69" Margin="136,199,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="253" InputScope="Number" />
+                    <TextBlock HorizontalAlignment="Left" Margin="20,295,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R1" HorizontalAlignment="Left" Margin="101.348,296.015,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955"
+                               RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                         <TextBlock.RenderTransform>
-                            <CompositeTransform SkewX="-2.035" TranslateX="0.711"/>
+                            <CompositeTransform SkewX="-2.035" TranslateX="0.711" />
                         </TextBlock.RenderTransform>
                     </TextBlock>
-                    <Button x:Name="Calc1" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc1_Click"/>
-                    <Button x:Name="Clr1" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr1_Click"/>
-                    <TextBlock Margin="33,69,40,0" TextWrapping="Wrap" Text="A = ( Base *  Height ) / 2" VerticalAlignment="Top" FontSize="35"/>
+                    <Button x:Name="Calc1" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc1_Click" />
+                    <Button x:Name="Clr1" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr1_Click" />
+                    <TextBlock Margin="33,69,40,0" TextWrapping="Wrap" Text="A = ( Base *  Height ) / 2"
+                               VerticalAlignment="Top" FontSize="35" />
                 </Grid>
             </phone:PivotItem>
 
@@ -45,86 +55,146 @@
             <phone:PivotItem Header="Rectangle">
 
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Length :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="C1" HorizontalAlignment="Left" Height="66" Margin="109,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Width : " VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="C2" HorizontalAlignment="Left" Height="66" Margin="109,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <Button x:Name="Calc2A" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc2"/>
-                    <Button x:Name="Clr2A" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr2"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R2" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="181,34,0,0" TextWrapping="Wrap" Text="A = W * L" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Length :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="C1" HorizontalAlignment="Left" Height="66" Margin="109,96,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Width : "
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="C2" HorizontalAlignment="Left" Height="66" Margin="109,157,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <Button x:Name="Calc2A" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc2" />
+                    <Button x:Name="Clr2A" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr2" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R2" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955"
+                               RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                    <TextBlock HorizontalAlignment="Left" Margin="181,34,0,0" TextWrapping="Wrap" Text="A = W * L"
+                               VerticalAlignment="Top" FontSize="30" />
                 </Grid>
             </phone:PivotItem>
 
             <phone:PivotItem Header="Parallelogram">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Base :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="D1" HorizontalAlignment="Left" Height="66" Margin="109,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Hight : " VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="D2" HorizontalAlignment="Left" Height="66" Margin="109,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <Button x:Name="Calc2D" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc3"/>
-                    <Button x:Name="Clr2D" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr3"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R3" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="181,34,0,0" TextWrapping="Wrap" Text="A = B * H" VerticalAlignment="Top" FontSize="30"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Base :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="D1" HorizontalAlignment="Left" Height="66" Margin="109,96,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Hight : "
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="D2" HorizontalAlignment="Left" Height="66" Margin="109,157,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <Button x:Name="Calc2D" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc3" />
+                    <Button x:Name="Clr2D" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr3" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,303,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R3" HorizontalAlignment="Left" Margin="101.348,300.015,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="273" Height="48.955"
+                               RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" />
+                    <TextBlock HorizontalAlignment="Left" Margin="181,34,0,0" TextWrapping="Wrap" Text="A = B * H"
+                               VerticalAlignment="Top" FontSize="30" />
                 </Grid>
 
             </phone:PivotItem>
 
             <phone:PivotItem Header="Trapezoid">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Base 1 :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="E1" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Base 2 : " VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="E2" HorizontalAlignment="Left" Height="66" Margin="111,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <Button x:Name="Calc2E" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc4"/>
-                    <Button x:Name="Clr2E" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr4"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,323,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R4" HorizontalAlignment="Left" Margin="101,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="273" Height="49" RenderTransformOrigin="0.5,0.5"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Hight :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="E3" HorizontalAlignment="Left" Height="66" Margin="111,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Base 1 :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="E1" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Base 2 : "
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="E2" HorizontalAlignment="Left" Height="66" Margin="111,162,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <Button x:Name="Calc2E" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc4" />
+                    <Button x:Name="Clr2E" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr4" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,323,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R4" HorizontalAlignment="Left" Margin="101,320,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="273" Height="49"
+                               RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Hight :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="E3" HorizontalAlignment="Left" Height="66" Margin="111,228,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number" />
                 </Grid>
 
             </phone:PivotItem>
             <phone:PivotItem Header="Circle">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Value :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="F1" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <Button x:Name="Calc2F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc5"/>
-                    <Button x:Name="Clr2F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr5"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R5" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="299" Height="49" RenderTransformOrigin="0.5,0.5"/>
-                    <RadioButton x:Name="Rad" Content="Radius" HorizontalAlignment="Left" Margin="238,32,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="Dia" Content="Diameter" HorizontalAlignment="Left" Margin="0,32,0,0" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Value :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="F1" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <Button x:Name="Calc2F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc5" />
+                    <Button x:Name="Clr2F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr5" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R5" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="299" Height="49"
+                               RenderTransformOrigin="0.5,0.5" />
+                    <RadioButton x:Name="Rad" Content="Radius" HorizontalAlignment="Left" Margin="238,32,0,0"
+                                 VerticalAlignment="Top" />
+                    <RadioButton x:Name="Dia" Content="Diameter" HorizontalAlignment="Left" Margin="0,32,0,0"
+                                 VerticalAlignment="Top" />
                 </Grid>
             </phone:PivotItem>
             <phone:PivotItem Header="Ellipse">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Value 1 :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="F7" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
-                    <Button x:Name="Calc7F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc7"/>
-                    <Button x:Name="Clr7F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr7"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R7" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="299" Height="49" RenderTransformOrigin="0.5,0.5"/>
-                    <RadioButton x:Name="Rad1" Content="Radius" HorizontalAlignment="Left" Margin="238,32,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="Dia1" Content="Diameter" HorizontalAlignment="Left" Margin="0,32,0,0" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" Text="Value 2 :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="F17" HorizontalAlignment="Left" Height="66" Margin="111,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Value 1 :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="F7" HorizontalAlignment="Left" Height="66" Margin="111,96,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="289" InputScope="Number" />
+                    <Button x:Name="Calc7F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc7" />
+                    <Button x:Name="Clr7F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr7" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R7" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="299" Height="49"
+                               RenderTransformOrigin="0.5,0.5" />
+                    <RadioButton x:Name="Rad1" Content="Radius" HorizontalAlignment="Left" Margin="238,32,0,0"
+                                 VerticalAlignment="Top" />
+                    <RadioButton x:Name="Dia1" Content="Diameter" HorizontalAlignment="Left" Margin="0,32,0,0"
+                                 VerticalAlignment="Top" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" Text="Value 2 :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="F17" HorizontalAlignment="Left" Height="66" Margin="111,165,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="289" InputScope="Number" />
                 </Grid>
 
             </phone:PivotItem>
 
             <phone:PivotItem Header="Polygon">
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
-                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap" Text="Number of sides :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="F8" HorizontalAlignment="Left" Height="66" Margin="243,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" InputScope="Number" />
-                    <Button x:Name="Calc8F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Calc8"/>
-                    <Button x:Name="Clr8F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0" VerticalAlignment="Top" Height="81" Width="211" Click="Clr8"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBlock x:Name="R8" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Width="345" Height="49" RenderTransformOrigin="0.5,0.5"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap" Text="Lenght of side :" VerticalAlignment="Top" FontSize="30"/>
-                    <TextBox x:Name="F18" HorizontalAlignment="Left" Height="66" Margin="213,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,104,0,0" TextWrapping="Wrap"
+                               Text="Number of sides :" VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="F8" HorizontalAlignment="Left" Height="66" Margin="243,94,0,0" TextWrapping="Wrap"
+                             VerticalAlignment="Top" Width="213" InputScope="Number" />
+                    <Button x:Name="Calc8F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Calc8" />
+                    <Button x:Name="Clr8F" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
+                            VerticalAlignment="Top" Height="81" Width="211" Click="Clr8" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="Area :"
+                               VerticalAlignment="Top" FontSize="30" />
+                    <TextBlock x:Name="R8" HorizontalAlignment="Left" Margin="101,236,0,0" TextWrapping="Wrap"
+                               VerticalAlignment="Top" FontSize="30" Width="345" Height="49"
+                               RenderTransformOrigin="0.5,0.5" />
+                    <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" TextWrapping="Wrap"
+                               Text="Lenght of side :" VerticalAlignment="Top" FontSize="30" />
+                    <TextBox x:Name="F18" HorizontalAlignment="Left" Height="66" Margin="213,165,0,0"
+                             TextWrapping="Wrap" VerticalAlignment="Top" Width="243" InputScope="Number" />
                 </Grid>
 
             </phone:PivotItem>

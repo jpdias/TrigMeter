@@ -10,50 +10,50 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait"  Orientation="Portrait"
+    SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
-        <Rectangle 
-    VerticalAlignment="Top" HorizontalAlignment="Stretch" 
-    Height="150" Fill="OrangeRed" />
+        <Rectangle
+            VerticalAlignment="Top" HorizontalAlignment="Stretch"
+            Height="150" Fill="OrangeRed" />
         <!--Pivot Control-->
         <phone:Pivot Title="TrigMeter">
             <!--Pivot item one-->
             <phone:PivotItem Header="Pythagoras">
                 <Canvas Height="453" VerticalAlignment="Top">
                     <TextBox x:Name="C" InputScope="Number" HorizontalAlignment="Left" Height="69"
-                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="232"
-                                 Canvas.Top="163" />
+                             TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="232"
+                             Canvas.Top="163" />
                     <TextBox x:Name="B" InputScope="Number" HorizontalAlignment="Left" Height="67"
-                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="232"
-                                 Canvas.Top="105" />
+                             TextWrapping="Wrap" VerticalAlignment="Center" Width="207" Canvas.Left="232"
+                             Canvas.Top="105" />
                     <TextBox x:Name="A" InputScope="Number" HorizontalAlignment="Left" Height="72"
-                                 TextWrapping="Wrap" VerticalAlignment="Center" Width="207"
-                                 RenderTransformOrigin="0.473,0.435" Canvas.Left="232" Canvas.Top="43" />
+                             TextWrapping="Wrap" VerticalAlignment="Center" Width="207"
+                             RenderTransformOrigin="0.473,0.435" Canvas.Left="232" Canvas.Top="43" />
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cathethus A : "
-                                   VerticalAlignment="Top" Height="57" Width="183" FontSize="30" Canvas.Left="49"
-                                   Canvas.Top="57" />
+                               VerticalAlignment="Top" Height="57" Width="183" FontSize="30" Canvas.Left="49"
+                               Canvas.Top="57" />
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cathethus B : "
-                                   VerticalAlignment="Top" Height="57" Width="183" FontSize="30" Canvas.Left="49"
-                                   Canvas.Top="120" />
+                               VerticalAlignment="Top" Height="57" Width="183" FontSize="30" Canvas.Left="49"
+                               Canvas.Top="120" />
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hypotenuse : "
-                                   VerticalAlignment="Top" Height="55" Width="183" FontSize="30" Canvas.Left="49"
-                                   Canvas.Top="177" />
+                               VerticalAlignment="Top" Height="55" Width="183" FontSize="30" Canvas.Left="49"
+                               Canvas.Top="177" />
                     <Button Content="Calculate" HorizontalAlignment="Left" VerticalAlignment="Top" Height="91"
-                                Width="214" Click="Button_Click" Canvas.Left="232" Canvas.Top="333" />
+                            Width="214" Click="Button_Click" Canvas.Left="232" Canvas.Top="333" />
                     <Button Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="204"
-                                Height="88" Click="Button_Click_1" Canvas.Left="28" Canvas.Top="336" />
+                            Height="88" Click="Button_Click_1" Canvas.Left="28" Canvas.Top="336" />
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="β : " VerticalAlignment="Top"
-                                   Height="67" Width="48" FontSize="30" Canvas.Left="242" Canvas.Top="261" />
+                               Height="67" Width="48" FontSize="30" Canvas.Left="242" Canvas.Top="261" />
                     <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="α :" VerticalAlignment="Top"
-                                   Height="67" Width="36" FontSize="30" Canvas.Left="49" Canvas.Top="261" />
+                               Height="67" Width="36" FontSize="30" Canvas.Left="49" Canvas.Top="261" />
                     <TextBlock x:Name="C1" TextWrapping="Wrap" Height="47" Width="152" FontSize="30"
-                                   Foreground="White" Canvas.Left="85" Canvas.Top="261" />
+                               Foreground="White" Canvas.Left="85" Canvas.Top="261" />
                     <TextBlock x:Name="C2" TextWrapping="Wrap" Height="47" Width="152" FontSize="30"
-                                   RenderTransformOrigin="-0.15,0.458" Canvas.Left="285" Canvas.Top="261"
-                                   Foreground="White" />
+                               RenderTransformOrigin="-0.15,0.458" Canvas.Left="285" Canvas.Top="261"
+                               Foreground="White" />
                 </Canvas>
             </phone:PivotItem>
 
