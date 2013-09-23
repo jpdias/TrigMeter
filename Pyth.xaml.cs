@@ -20,12 +20,16 @@ namespace TrigMeter
             InitializeComponent();
         }
 
+        private double num;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             float a = 0, b = 0, c = 0;
 
-            if ((A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0) || (A.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
+            if (((A.Text.Trim().Length != 0 && B.Text.Trim().Length != 0) || (A.Text.Trim().Length != 0 && C.Text.Trim().Length != 0)
                 || (B.Text.Trim().Length != 0 && C.Text.Trim().Length != 0))
+                && (double.TryParse(A.Text, out num) && double.TryParse(B.Text,out num)) ||(double.TryParse(B.Text,out num) && double.TryParse(C.Text,out num)
+)|| (double.TryParse(A.Text, out num) && double.TryParse(C.Text, out num))
+                )
             {
                 if (C.Text.Trim().Length == 0)
                 {
@@ -34,7 +38,7 @@ namespace TrigMeter
                     alfa = a;
                     beta = b;
                     //c = float.Parse(C.Text);
-                    c = (float) Math.Sqrt(a*a + b*b);
+                    c = (float)Math.Round(Math.Sqrt(a * a + b * b), 5);
                     C.Text = c.ToString();
                     angles(a, b, c);
                 }
@@ -47,13 +51,13 @@ namespace TrigMeter
                     if (b > c)
                     {
                         MessageBox.Show("Cathethus can't be larger than hypotenuse!", "", MessageBoxButton.OK);
-                        clear();
+                      
                         return;
                     }
 
 
                     //c = float.Parse(C.Text);
-                    a = (float) Math.Sqrt(c*c - b*b);
+                    a = (float)Math.Round(Math.Sqrt(c * c - b * b),5);
                     A.Text = a.ToString();
                     angles(a, b, c);
                 }
@@ -67,11 +71,11 @@ namespace TrigMeter
                     if (a > c)
                     {
                         MessageBox.Show("Cathethus can't be larger than hypotenuse!", "", MessageBoxButton.OK);
-                        clear();
+                       
                         return;
                     }
                     //c = float.Parse(C.Text);
-                    b = (float) Math.Sqrt(c*c - a*a);
+                    b = (float) Math.Round((Math.Sqrt(c*c - a*a)),5);
                     B.Text = b.ToString();
                     angles(a, b, c);
                 }
@@ -85,7 +89,7 @@ namespace TrigMeter
             else
             {
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
-                return;
+               
             }
 
         }
@@ -99,10 +103,10 @@ namespace TrigMeter
         private void angles(float a, float b, float c)
         {
             String c1, c2;
-            c1 = RTD(Math.Acos(((b * b + c * c - a * a) / (2 * b * c)))).ToString();
-            c2 = RTD(Math.Acos(((-b * b + c * c + a * a) / (2 * a * c)))).ToString();
-            C1.Text = c1.Substring(0, 8);
-            C2.Text = c2.Substring(0, 8);
+            c1 = Math.Round(RTD(Math.Acos(((b * b + c * c - a * a) / (2 * b * c)))),5).ToString();
+            c2 =Math.Round( RTD(Math.Acos(((-b * b + c * c + a * a) / (2 * a * c)))),5).ToString();
+            C1.Text = c1;
+            C2.Text = c2;
             //calc();
         }
 
