@@ -49,11 +49,10 @@ namespace TrigMeter
 
                 img = Math.Sqrt(sqrtpart)/(2*a);
 
-                R1.Text = x + " + " + Math.Round(img, 4) + " i";
-                R2.Text = x + " - " + Math.Round(img, 4) + " i";
+                R1.Text = Math.Round(x, 5) + " + " + Math.Round(img, 4) + " i";
+                R2.Text = Math.Round(x, 5) + " - " + Math.Round(img, 4) + " i";
                 // Console.WriteLine("Two Imaginary Solutions: {0,8:f4} + {1,8:f4} i or {2,8:f4} + {3,8:f4} i", x, img, x, img);
             }
-
             else
             {
                 x = (-b + Math.Sqrt(sqrtpart))/(2*a);

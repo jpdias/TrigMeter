@@ -62,7 +62,7 @@ namespace TrigMeter
         {
             if ((D1.Text.Trim().Length != 0) && (D2.Text.Trim().Length != 0) && double.TryParse(D1.Text, out num) &&
                 double.TryParse(D2.Text, out num))
-                R3.Text = Math.Abs((float.Parse(C1.Text)*float.Parse(C2.Text))).ToString();
+                R3.Text = Math.Abs((float.Parse(D1.Text)*float.Parse(D2.Text))).ToString();
             else
             {
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
