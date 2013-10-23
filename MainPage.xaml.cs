@@ -10,7 +10,10 @@ namespace TrigMeter
         {
             InitializeComponent();
         }
-
+        private void About1(object sender, EventArgs eventArgs)
+        {
+            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.Relative));
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/Pyth.xaml", UriKind.Relative));

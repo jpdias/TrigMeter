@@ -78,3 +78,5 @@ C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\De
 C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\TrigMeter.dll
 C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\TrigMeter.pdb
 C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\XapCacheFile.xml
+C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\about.png
+C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\Page1.g.cs

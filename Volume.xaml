@@ -96,9 +96,9 @@
                 <Grid HorizontalAlignment="Left" Height="603" VerticalAlignment="Top" Width="456">
                     <TextBlock HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="Height : "
                                VerticalAlignment="Top" FontSize="30" Width="171" />
-                    <TextBox x:Name="F1" HorizontalAlignment="Right" Height="66" Margin="0,146,0,0" TextWrapping="Wrap"
+                    <TextBox x:Name="I2" HorizontalAlignment="Right" Height="66" Margin="0,146,0,0" TextWrapping="Wrap"
                              VerticalAlignment="Top" Width="346" InputScope="Number" />
-                    <Button x:Name="Calc3F" Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
+                    <Button Content="Calculate" HorizontalAlignment="Left" Margin="220,427,0,0"
                             VerticalAlignment="Top" Height="81" Width="211" Click="Calc7" />
                     <Button x:Name="ClrF" Content="Clear" HorizontalAlignment="Left" Margin="10,427,0,0"
                             VerticalAlignment="Top" Height="81" Width="211" Click="Clr7" />
@@ -111,7 +111,7 @@
                                Text="V = Area of Base  *  Height" VerticalAlignment="Top" FontSize="30" Width="372" />
                     <TextBlock HorizontalAlignment="Left" Margin="10,219,0,0" TextWrapping="Wrap" Text="Area of Base: "
                                VerticalAlignment="Top" FontSize="30" Width="171" />
-                    <TextBox x:Name="F3" HorizontalAlignment="Left" Height="66" Margin="181,205,0,0"
+                    <TextBox x:Name="I1" HorizontalAlignment="Left" Height="66" Margin="181,205,0,0"
                              TextWrapping="Wrap" VerticalAlignment="Top" Width="275" InputScope="Number" />
                 </Grid>
             </phone:PivotItem>

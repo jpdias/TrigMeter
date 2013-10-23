@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows;
 using Microsoft.Phone.Controls;
 
@@ -66,19 +67,26 @@ namespace TrigMeter
         }
 
         private void Calc7(object sender, RoutedEventArgs e)
+
         {
-            if (F1.Text.Trim().Length != 0 && F3.Text.Trim().Length != 0
-                && double.TryParse(F1.Text, out num) && double.TryParse(F3.Text, out num))
-                R6.Text = Math.Abs(1/3*float.Parse(F1.Text)*float.Parse(F3.Text)).ToString();
+            var num1 =new double();
+            var num2=new double();
+
+            if (I2.Text.Trim().Length != 0 && I1.Text.Trim().Length != 0 && double.TryParse(I2.Text, out num1) && double.TryParse(I1.Text, out num2))
+            {
+                R6.Text = ((double)1.0 / (double) 3.0 * num1 * num2).ToString();
+            }
+               
             else
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
         }
 
         private void Clr7(object sender, RoutedEventArgs e)
         {
-            F1.Text = " ";
-            F3.Text = "";
+            I1.Text = " ";
+            I2.Text = "";
             R6.Text = "";
+       
         }
 
         private void CalcX(object sender, RoutedEventArgs e)
@@ -86,7 +94,7 @@ namespace TrigMeter
             if (X1.Text.Trim().Length != 0 && FX.Text.Trim().Length != 0
                 && double.TryParse(X1.Text, out num) && double.TryParse(FX.Text, out num))
                 RX.Text =
-                    Math.Abs(1/3*float.Parse(X1.Text)*float.Parse(FX.Text)*float.Parse(FX.Text)*Math.PI).ToString();
+                    Math.Abs((double)1.0 / (double)3.0 * float.Parse(X1.Text) * float.Parse(FX.Text) * float.Parse(FX.Text) * Math.PI).ToString();
             else
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
         }
@@ -102,7 +110,7 @@ namespace TrigMeter
         {
             if (FW.Text.Trim().Length != 0 && double.TryParse(FW.Text, out num))
                 RW.Text =
-                    Math.Abs(4/3*float.Parse(FW.Text)*float.Parse(FW.Text)*float.Parse(FW.Text)*Math.PI).ToString();
+                    Math.Abs((double)4.0 / (double)3.0 * float.Parse(FW.Text) * float.Parse(FW.Text) * float.Parse(FW.Text) * Math.PI).ToString();
             else
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
         }
@@ -119,7 +127,7 @@ namespace TrigMeter
                 && double.TryParse(FZ.Text, out num) && double.TryParse(FZ1.Text, out num) &&
                 double.TryParse(FZ2.Text, out num))
                 RZ.Text =
-                    Math.Abs(4/3*float.Parse(FZ.Text)*float.Parse(FZ1.Text)*float.Parse(FZ2.Text)*Math.PI).ToString();
+                    Math.Abs((double)4.0 / (double)3.0 * float.Parse(FZ.Text) * float.Parse(FZ1.Text) * float.Parse(FZ2.Text) * Math.PI).ToString();
             else
                 MessageBox.Show("No data!", "", MessageBoxButton.OK);
         }
