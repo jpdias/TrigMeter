@@ -12,13 +12,13 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
-    
+
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="about.png" Text="about" Click="About1"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
-    
+
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -40,13 +40,13 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Grid HorizontalAlignment="Left" Height="634" VerticalAlignment="Top" Width="456">
                 <Button Content="Pythagoras Theorem" HorizontalAlignment="Left" Margin="0,10,0,0"
-                        VerticalAlignment="Top" Width="456" Height="97" Click="Button_Click_1" />
+                        VerticalAlignment="Top" Width="456" Height="97" Click="Button_Click_1" Background="OrangeRed" BorderThickness="1" />
                 <Button Content="Areas" HorizontalAlignment="Left" Margin="0,107,0,0" VerticalAlignment="Top"
-                        Width="456" Height="97" Click="Button_Click" />
+                        Width="456" Height="97" Click="Button_Click" Background="OrangeRed" BorderThickness="1" />
                 <Button Content="Equations" HorizontalAlignment="Left" Margin="0,301,0,0" VerticalAlignment="Top"
-                        Width="456" Height="97" Click="Button_Click_2" />
+                        Width="456" Height="97" Click="Button_Click_2" Background="OrangeRed" BorderThickness="1" />
                 <Button x:Name="Volum" Content="Volumes" HorizontalAlignment="Left"
-                        Margin="0,204,0,0" VerticalAlignment="Top" Width="456" Height="97" Click="Volum_Click" />
+                        Margin="0,204,0,0" VerticalAlignment="Top" Width="456" Height="97" Click="Volum_Click" Background="OrangeRed" BorderThickness="1" />
 
             </Grid>
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using Microsoft.Phone.Controls;
 
@@ -8,6 +9,7 @@ namespace TrigMeter
     {
         public MainPage()
         {
+            Thread.Sleep(700);
             InitializeComponent();
         }
         private void About1(object sender, EventArgs eventArgs)
@@ -21,6 +23,7 @@ namespace TrigMeter
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+       
             NavigationService.Navigate(new Uri("/Areas.xaml", UriKind.Relative));
         }
 

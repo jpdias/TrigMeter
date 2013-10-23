@@ -1,5 +1,5 @@
-﻿<xapCache source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\TrigMeter_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23/10/2013 01:56:45">
-  <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\TrigMeter.dll" archivePath="TrigMeter.dll" lastWriteTime="23/10/2013 01:56:45" />
+﻿<xapCache source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\TrigMeter_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23/10/2013 11:20:53">
+  <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\obj\Debug\TrigMeter.dll" archivePath="TrigMeter.dll" lastWriteTime="23/10/2013 11:20:53" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\about.png" archivePath="about.png" lastWriteTime="23/10/2013 00:29:12" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="21/09/2013 15:57:08" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="21/09/2013 15:57:08" />
@@ -8,6 +8,7 @@
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="21/09/2013 15:57:08" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="21/09/2013 15:57:08" />
+  <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="23/10/2013 10:35:10" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="23/10/2013 00:21:53" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\TrigMeter.png" archivePath="TrigMeter.png" lastWriteTime="21/09/2013 15:57:09" />
   <file source="C:\Users\João Pedro Dias\Documents\Visual Studio 2013\Projects\TrigMeter\Bin\Debug\TrigMeter1.png" archivePath="TrigMeter1.png" lastWriteTime="23/09/2013 23:17:43" />
